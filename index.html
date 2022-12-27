@@ -11,7 +11,7 @@
             display: flex;
             justify-content: center;
         }
-        #main-contant {
+        #main-container {
             background-color: rgb(252, 216, 247);
             width: 80%;
             height: 80vh;
@@ -25,10 +25,35 @@
             border-top: solid black 2px;
             border-bottom: solid black 2px;
         }
-        #icon {
-            background-color: brown;
+        #img {
             width: 600px;
             height: 400px;
+            
+        }
+        #search {
+            /* background-color: rgb(255, 11, 11); */
+            width: 600px;
+            /* height: 100px; */
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #choose {
+            width: 80px;
+            height: 20px;
+            text-align: center;
+            font-size: 15px;
+        }
+        #contact {
+            /* background-color:  rgb(248, 218, 245); */
+            width: 100%;
+            height: 80px;
+        }
+        #btn {
+            width: 150%;
+            height: 40px;
+            font-size: 25px;
         }
     </style>
 </head>
@@ -44,16 +69,42 @@
     </div>
     <div id="contaner">
 
-        <div id="main-contant">
+        <div id="main-container">
 
-            <div id="icon">
-                
-                <img style="height: 100%; width: 100%;" src="icon.jpeg" alt="">
+            <div id="contant">
+
+                <div id="img">
+
+                    <img style="height: 100%; width: 100%;" src="icon.jpeg" alt="">
+                </div>
+                <div id="search">
+
+                    <div>
+
+                        <button id="btn">مواعيدي</button>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; width: 200px; padding: 5px;">
+                        <select name="" id="choose" required>
+
+                            <option value="1">أطفال</option>
+                            <option value="2">بالغين</option>
+                            <option value="3">كبار سن</option>
+                        </select>
+                        <h3> : بحث عن فئة</h3> 
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div id="contact">
 
+        <div style="direction: rtl; padding-top: 20px; font-size: 30px; border-top: solid black 1px; margin-top: 5px;" >
+
+            <div style="margin-right: 250px;">
+                للتواصل : 
+            </div>
+        </div>
     </div>
+    
 </body>
 </html>
